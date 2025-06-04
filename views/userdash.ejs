@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/dash.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main-content">
+        <header class="dashboard-header">
+          <h1>Welcome,<%= kyc.fullName %></h1>
+          <p>Here's an overview of your kyc activity</p>
+        </header>
+        <section class="cards">
+          <div class="card">
+            <h3>user</h3>
+            <p><%= kyc.user %></p>
+          </div>
+          <div class="card">
+            <h3>idType</h3>
+            <p><%= kyc.idType %></p>
+          </div>
+          <div class="card">
+            <h3>kyc status</h3>
+            <p>unverifeid</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampaliya Kyc</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <%- include ('partial/header') %>
+    <h3>wellcome: <%= User.email %></h3>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Verify Your Identity Securely</h1>
+          <p>
+            Start your KYC process quickly and safely with our trusted platform.
+          </p>
+          <a href="/form" class="hero-btn">Get Started</a>
+        </div>
+      </section>
+    </main>
+
+    <%- include ('partial/footer') %>
+  </body>
+</html>
